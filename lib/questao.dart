@@ -15,6 +15,16 @@ class Questao extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(texto);
+    return Container(
+      //o dobro do infinity
+      width: double.infinity,
+      //Margin em todas as laterais de 10
+      margin: const EdgeInsets.all(10),
+      child: Text(
+        texto,
+        style: const TextStyle(fontSize: 28),
+        textAlign: TextAlign.center,
+      ),
+    );
   }
 }
